@@ -39,17 +39,23 @@ const App = () => {
   }, [search, filters]);
 
   return (
-    <div className="min-h-screen bg-gray-900 text-white font-sans">
-      <div className="max-w-5xl mx-auto py-10 px-4">
-        <h1 className="text-3xl font-bold mb-8 text-center">College Finder</h1>
-        <div className="mb-6 flex flex-col md:flex-row gap-4 items-center justify-between">
-          <input
-            type="text"
-            placeholder="Search colleges by name..."
-            value={search}
-            onChange={handleSearchChange}
-            className="w-full md:w-1/2 px-4 py-2 rounded bg-gray-800 border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
-          />
+    <div className="min-h-screen bg-gray-900 text-white font-sans flex">
+      {/* Sidebar Search Bar */}
+      <div className="hidden md:flex flex-col w-64 bg-gray-800 p-6 shadow-lg min-h-screen">
+        <h1 className="text-2xl font-bold mb-8 text-center">College Finder</h1>
+        <input
+          type="text"
+          placeholder="Search colleges by name..."
+          value={search}
+          onChange={handleSearchChange}
+          className="w-full px-4 py-2 rounded bg-gray-900 border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
+        />
+      </div>
+      {/* Main Content */}
+      <div className="flex-1 max-w-5xl mx-auto py-10 px-4">
+        {/* Show title on mobile */}
+        <h1 className="text-3xl font-bold mb-8 text-center md:hidden">College Finder</h1>
+        <div className="mb-6">
           <FilterPanel filters={filters} onChange={handleFilterChange} colleges={mockColleges} />
         </div>
         <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">

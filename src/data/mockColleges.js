@@ -6,6 +6,7 @@ const mockColleges = [
     state: 'Maharashtra',
     city: 'Mumbai',
     branches: ['CSE', 'ECE', 'ME', 'CE', 'EE'],
+    photo: '/IIT-Bombay.webp',
   },
   {
     id: 2,
@@ -14,6 +15,7 @@ const mockColleges = [
     state: 'Tamil Nadu',
     city: 'Tiruchirappalli',
     branches: ['CSE', 'EEE', 'CE', 'ME'],
+    photo: '/NIT-Trichy.webp',
   },
   {
     id: 3,
@@ -22,6 +24,7 @@ const mockColleges = [
     state: 'Rajasthan',
     city: 'Pilani',
     branches: ['CSE', 'ECE', 'CHE', 'ME'],
+    photo: '/BITS-Pilani.webp',
   },
   {
     id: 4,
@@ -30,14 +33,16 @@ const mockColleges = [
     state: 'Uttar Pradesh',
     city: 'Allahabad',
     branches: ['IT', 'ECE', 'CSE'],
+    photo: '/IIIT-Allahabad.webp',
   },
   {
     id: 5,
-    name: 'National Institute of Technology Karnataka',
+    name: 'National Institute of Technology Surathkal',
     type: 'NIT',
     state: 'Karnataka',
     city: 'Surathkal',
     branches: ['CSE', 'ME', 'CE', 'EEE'],
+    photo: '/NIT-Karnataka.webp',
   },
   {
     id: 6,
@@ -46,6 +51,7 @@ const mockColleges = [
     state: 'Delhi',
     city: 'New Delhi',
     branches: ['CSE', 'EE', 'ME', 'CE'],
+    photo: '/IIT-Delhi.webp',
   },
   {
     id: 7,
@@ -54,6 +60,7 @@ const mockColleges = [
     state: 'Goa',
     city: 'Goa',
     branches: ['CSE', 'EEE', 'ECE'],
+    photo: '/BITS-Goa.webp',
   },
   {
     id: 8,
@@ -62,6 +69,7 @@ const mockColleges = [
     state: 'Telangana',
     city: 'Hyderabad',
     branches: ['CSE', 'ECE'],
+    photo: '/IIIT-Hyderbad.webp',
   },
   {
     id: 9,
@@ -70,6 +78,7 @@ const mockColleges = [
     state: 'Telangana',
     city: 'Warangal',
     branches: ['CSE', 'ECE', 'ME', 'CE'],
+    photo: '/NIT-WARANGAL.webp',
   },
   {
     id: 10,
@@ -78,6 +87,7 @@ const mockColleges = [
     state: 'Tamil Nadu',
     city: 'Chennai',
     branches: ['CSE', 'EE', 'ME', 'CE', 'AE'],
+    photo: '/IIT-Madras.webp',
   },
 ];
 
